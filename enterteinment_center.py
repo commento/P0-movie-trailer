@@ -1,6 +1,8 @@
+#import media and fresh_tomatoes
 import media
 import fresh_tomatoes
 
+#instanciate 3 Movies
 magnolia = media.Movie("Magnolia",
                        "It's raining frogs",
                        "http://static.rogerebert.com/uploads/movie/movie_poster/magnolia-1999/large_gHGwiXFEJ5222UiHgtm6VGCJoQI.jpg",
@@ -16,8 +18,8 @@ itmwith = media.Movie("Is the Man Who Is Tall Happy?",
                        "https://image.tmdb.org/t/p/w600/4OEbqYd4kSwAvw2PNZlr0lKlmKy.jpg",
                        "https://www.youtube.com/watch?v=d9c4xJEP6eI")
 
-
-#magnolia.show_trailer()
-
+#add the movies to a list
 movies = [magnolia, ottoemezzo, itmwith]
+
+#generate the html using the fresh_tomatoes open_movies_page() method
 fresh_tomatoes.open_movies_page(movies)
